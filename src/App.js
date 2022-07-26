@@ -29,12 +29,18 @@ function App() {
       <button onClick={() => setId((prev) => prev + 1)}>
         fetch again with new id
       </button>
-      <p>{post?.title}</p>
 
+      {/* LOGICAL AND 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND
+ */}
       {/* {posts && posts.map((post) => <p>{post.title}</p>)} */}
+
+      {/* OPTIONAL CHAINING
+      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining */}
       {/* {posts?.map((post) => (
         <p>{post.title}</p>
       ))} */}
+      <p>{post?.title}</p>
     </div>
   );
 }
